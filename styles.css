@@ -1,5 +1,265 @@
+
+:root {
+    --color-principal: #1e3a8a;
+    --color-secundario: #2563eb;
+    --color-fondo: #f4f6f8;
+    --color-blanco: #ffffff;
+    --color-texto: #333333;
+    --color-hover: #172554;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+header {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 25px 50px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+    font-size: 32px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--color-hover);
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+section h2 {
+    color: var(--color-principal);
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+#inicio {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+#inicio h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+#inicio img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--color-principal);
+}
+
+#inicio a,
+.proyecto a {
+    display: inline-block;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+#inicio a:hover,
+.proyecto a:hover {
+    background-color: var(--color-hover);
+    transform: translateY(-2px);
+}
+
+.proyecto img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.habilidades-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.habilidad {
+    background-color: var(--color-blanco);
+    width: 220px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.habilidad:hover {
+    transform: translateY(-5px);
+}
+
+.habilidad h3 {
+    color: var(--color-secundario);
+    margin-bottom: 10px;
+}
+
+.habilidad p {
+    line-height: 1.5;
+}
+
+#proyectos {
+    background-color: var(--color-blanco);
+}
+
+.proyecto {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin: 15px;
+    padding: 25px;
+    background-color: var(--color-fondo);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto h3 {
+    color: var(--color-principal);
+}
+
+.proyecto p {
+    line-height: 1.6;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: var(--color-blanco);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: var(--color-hover);
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    #inicio {
+        min-height: auto;
+        padding-top: 40px;
+    }
+
+    #inicio h2 {
+        font-size: 32px;
+    }
+
+    .proyecto {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .proyecto img {
+        width: 100%;
+        max-width: 300px;
+    }
 }
