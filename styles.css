@@ -278,3 +278,16 @@ footer p {
     background-color: #374151;
     color: #ffffff;
 }
+
+#boton-tema {
+    display: block;
+    margin: 20px auto 0;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}

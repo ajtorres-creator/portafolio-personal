@@ -35,7 +35,7 @@ function CambiarTema () {
 
     document.body.classList.toggle("modo-oscuro");
 
-    if (document.body.classList.contains("modo-oscuro")){
+    if (document.body.classList.contains("Modo-oscuro")){
         localStorage.setItem("tema", "oscuro");
         botonTema.textContent = "Modo claro";
     } else {
@@ -47,6 +47,6 @@ botonTema.addEventListener("click", CambiarTema);
 const temaGuardado = localStorage.getItem("tema");
 
 if(temaGuardado === "oscuro") {
-    document.body.classList.add("modo oscuro");
-    botonTema.textContent ="modo claro";
+    document.body.classList.add("Modo oscuro");
+    botonTema.textContent ="Modo claro";
 }
