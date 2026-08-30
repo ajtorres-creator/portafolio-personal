@@ -124,6 +124,31 @@ section h2 {
     border-radius: 10px;
 }
 
+.proyecto {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin: 15px;
+    padding: 25px;
+    background-color: var(--color-blanco);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto h3 {
+    color: var(--color-principal);
+    font-size: 22px;
+}
+
+.proyecto p {
+    line-height: 1.6;
+}
+
 .habilidades-container {
     display: flex;
     justify-content: center;
@@ -155,25 +180,6 @@ section h2 {
 
 #proyectos {
     background-color: var(--color-blanco);
-}
-
-.proyecto {
-    display: inline-block;
-    vertical-align: top;
-    width: 45%;
-    margin: 15px;
-    padding: 25px;
-    background-color: var(--color-fondo);
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.proyecto h3 {
-    color: var(--color-principal);
-}
-
-.proyecto p {
-    line-height: 1.6;
 }
 
 form {
@@ -290,4 +296,38 @@ footer p {
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
+}
+
+#boton-mensaje {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px 0;
+}
+
+#boton-mensaje:hover {
+    background-color: var(--color-hover);
+    transform: translateY(-2px);
+}
+
+#boton-mensaje:active {
+    transform: translateY(0);
+}
+
+.modo-oscuro form {
+    background-color: #374151;
+    color: #ffffff;
+}
+
+.modo-oscuro form input,
+.modo-oscuro form textarea {
+    background-color: #4b5563;
+    color: #ffffff;
+    border-color: #6b7280;
 }
