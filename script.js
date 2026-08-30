@@ -31,11 +31,11 @@ formulario.addEventListener("submit", function(event){
 });
 
 const botonTema = document.getElementById("boton-tema");
-function CambiarTema () {
+function cambiarTema () {
 
     document.body.classList.toggle("modo-oscuro");
 
-    if (document.body.classList.contains("Modo-oscuro")){
+    if (document.body.classList.contains("modo-oscuro")){
         localStorage.setItem("tema", "oscuro");
         botonTema.textContent = "Modo claro";
     } else {
@@ -43,10 +43,10 @@ function CambiarTema () {
         botonTema.textContent = "Modo oscuro";
     }
 }
-botonTema.addEventListener("click", CambiarTema);
+botonTema.addEventListener("click", cambiarTema);
 const temaGuardado = localStorage.getItem("tema");
 
 if(temaGuardado === "oscuro") {
-    document.body.classList.add("Modo oscuro");
+    document.body.classList.add("modo-oscuro");
     botonTema.textContent ="Modo claro";
 }
