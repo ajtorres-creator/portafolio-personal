@@ -263,3 +263,18 @@ footer p {
         max-width: 300px;
     }
 }
+
+.modo-oscuro {
+    background-color: #1f2937;
+    color: #ffffff;
+}
+
+.modo-oscuro section h2 {
+    color: #60a5fa;
+}
+
+.modo-oscuro .habilidad,
+.modo-oscuro .proyecto {
+    background-color: #374151;
+    color: #ffffff;
+}
